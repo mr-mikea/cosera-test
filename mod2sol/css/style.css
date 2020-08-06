@@ -1,10 +1,57 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: cursive;
 }
 
-h1{
+section {
+    margin: 40px;
+}
+
+h1 {
     text-align: center;
-    margin:30px auto;
+    margin: 30px auto;
+}
+
+section .section {
+    border: 3px solid gray;
+    width: 30%;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: azure;
+}
+
+section .section h4 {
+    width: 25%;
+    position: relative;
+    left: 78%;
+    bottom: 10px;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section .section {
+        width: 45%;
+    }
+    section .section.full{
+        width: 92%;
+    }
+
+    section .section.full h4{
+        left: 76.5%;
+    }
+}
+@media (max-width: 767px) {
+    section .section {
+        width: 92%;
+    }
+    section .section h4{
+        left: 77%;
+    }
 }
